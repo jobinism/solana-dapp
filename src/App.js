@@ -2,8 +2,11 @@ import twitterLogo from './assets/twitter-logo.svg';
 import './App.css';
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = '0xJobin';
+const BUILDSPACE = '_buildspace'
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+const BS_TWITTER_LINK = `https://twitter.com/${BUILDSPACE}`;
+
 
 const App = () => {
   return (
@@ -22,7 +25,13 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+          >{`built by @${TWITTER_HANDLE}`}</a>&nbsp;
+          <a
+          className='footer-text'
+          href={BS_TWITTER_LINK}
+          target="_blank"
+          rel='noreferrer'
+          >{`on @${BUILDSPACE}`}</a>
         </div>
       </div>
     </div>
